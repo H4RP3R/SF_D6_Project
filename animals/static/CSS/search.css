@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Leckerli One', cursive;
+    color: #F226E8;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+li>a {
+    color: #F226E8;
+}
+
+li>a:hover {
+    color: #343A40 !important;
+    text-decoration: none;
+}

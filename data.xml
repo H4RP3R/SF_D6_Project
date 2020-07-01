@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="registry.passport" pk="1">
+        <field name="entered" type="DateField">2020-06-15</field>
+        <field name="vaccination" type="BooleanField">True</field>
+        <field name="cage_num" type="CharField">A01</field>
+    </object>
+    <object model="registry.passport" pk="2">
+        <field name="entered" type="DateField">2020-06-30</field>
+        <field name="vaccination" type="BooleanField">True</field>
+        <field name="cage_num" type="CharField">A02</field>
+    </object>
+    <object model="registry.passport" pk="3">
+        <field name="entered" type="DateField">2020-04-12</field>
+        <field name="vaccination" type="BooleanField">True</field>
+        <field name="cage_num" type="CharField">A03</field>
+    </object>
+    <object model="registry.passport" pk="4">
+        <field name="entered" type="DateField">2020-06-27</field>
+        <field name="vaccination" type="BooleanField">True</field>
+        <field name="cage_num" type="CharField">A04</field>
+    </object>
+    <object model="registry.passport" pk="7">
+        <field name="entered" type="DateField">2020-06-30</field>
+        <field name="vaccination" type="BooleanField">True</field>
+        <field name="cage_num" type="CharField">B03</field>
+    </object>
+    <object model="registry.passport" pk="8">
+        <field name="entered" type="DateField">2020-07-01</field>
+        <field name="vaccination" type="BooleanField">True</field>
+        <field name="cage_num" type="CharField">C14</field>
+    </object>
+    <object model="registry.passport" pk="9">
+        <field name="entered" type="DateField">2020-01-12</field>
+        <field name="vaccination" type="BooleanField">True</field>
+        <field name="cage_num" type="CharField">C13</field>
+    </object>
+    <object model="registry.passport" pk="10">
+        <field name="entered" type="DateField">2020-07-01</field>
+        <field name="vaccination" type="BooleanField">False</field>
+        <field name="cage_num" type="CharField">D02</field>
+    </object>
+    <object model="animals.cat" pk="1">
+        <field name="species" type="CharField">cat</field>
+        <field name="breed" type="CharField">Siamese</field>
+        <field name="name" type="CharField">Tessa</field>
+        <field name="passport" rel="OneToOneRel" to="registry.passport">1</field>
+        <field name="age" type="PositiveSmallIntegerField">1</field>
+        <field name="image" type="FileField">photos/cat-882049_640.jpg</field>
+        <field name="description" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant morbi. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Quisque sagittis purus sit amet volutpat. Nunc faucibus a pellentesque sit amet
+            porttitor. Nunc non blandit massa enim nec dui nunc mattis enim.</field>
+        <field name="gender" type="CharField">M</field>
+        <field name="litter_box" type="BooleanField">True</field>
+        <field name="color" type="CharField">ivory</field>
+        <field name="fur" type="CharField">S</field>
+    </object>
+    <object model="animals.cat" pk="2">
+        <field name="species" type="CharField">cat</field>
+        <field name="breed" type="CharField"></field>
+        <field name="name" type="CharField">Leo</field>
+        <field name="passport" rel="OneToOneRel" to="registry.passport">2</field>
+        <field name="age" type="PositiveSmallIntegerField">
+            <None></None>
+        </field>
+        <field name="image" type="FileField">photos/cat-1044750_960_720.jpg</field>
+        <field name="description" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant morbi. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Quisque sagittis purus sit amet volutpat. Nunc faucibus a pellentesque sit amet
+            porttitor. Nunc non blandit massa enim nec dui nunc mattis enim.</field>
+        <field name="gender" type="CharField">M</field>
+        <field name="litter_box" type="BooleanField">False</field>
+        <field name="color" type="CharField">red</field>
+        <field name="fur" type="CharField">S</field>
+    </object>
+    <object model="animals.cat" pk="3">
+        <field name="species" type="CharField">cat</field>
+        <field name="breed" type="CharField">Maine Coon</field>
+        <field name="name" type="CharField">Alto</field>
+        <field name="passport" rel="OneToOneRel" to="registry.passport">3</field>
+        <field name="age" type="PositiveSmallIntegerField">2</field>
+        <field name="image" type="FileField">photos/78be34d2cd05b238bb70f54f0e16--fabric-maine-coon-cat-in-the-style-of-teddy-nature.jpg</field>
+        <field name="description" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant morbi. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Quisque sagittis purus sit amet volutpat. Nunc faucibus a pellentesque sit amet
+            porttitor. Nunc non blandit massa enim nec dui nunc mattis enim.</field>
+        <field name="gender" type="CharField">M</field>
+        <field name="litter_box" type="BooleanField">True</field>
+        <field name="color" type="CharField">grey</field>
+        <field name="fur" type="CharField">L</field>
+    </object>
+    <object model="animals.cat" pk="4">
+        <field name="species" type="CharField">cat</field>
+        <field name="breed" type="CharField"></field>
+        <field name="name" type="CharField">Emma</field>
+        <field name="passport" rel="OneToOneRel" to="registry.passport">4</field>
+        <field name="age" type="PositiveSmallIntegerField">3</field>
+        <field name="image" type="FileField">photos/animal-1840495_960_720.jpg</field>
+        <field name="description" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant morbi. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Quisque sagittis purus sit amet volutpat. Nunc faucibus a pellentesque sit amet
+            porttitor. Nunc non blandit massa enim nec dui nunc mattis enim.</field>
+        <field name="gender" type="CharField">F</field>
+        <field name="litter_box" type="BooleanField">False</field>
+        <field name="color" type="CharField">black</field>
+        <field name="fur" type="CharField">L</field>
+    </object>
+    <object model="animals.dog" pk="1">
+        <field name="species" type="CharField">dog</field>
+        <field name="breed" type="CharField">Chihuahua</field>
+        <field name="name" type="CharField">Bandit</field>
+        <field name="passport" rel="OneToOneRel" to="registry.passport">8</field>
+        <field name="age" type="PositiveSmallIntegerField">3</field>
+        <field name="image" type="FileField">photos/chihuahua-2765389_640.jpg</field>
+        <field name="description" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant morbi. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Quisque sagittis purus sit amet volutpat. Nunc faucibus a pellentesque sit amet
+            porttitor. Nunc non blandit massa enim nec dui nunc mattis enim.</field>
+        <field name="gender" type="CharField">M</field>
+        <field name="size" type="CharField">S</field>
+    </object>
+    <object model="animals.dog" pk="2">
+        <field name="species" type="CharField">dog</field>
+        <field name="breed" type="CharField">Siberian Husky</field>
+        <field name="name" type="CharField">Buffy</field>
+        <field name="passport" rel="OneToOneRel" to="registry.passport">9</field>
+        <field name="age" type="PositiveSmallIntegerField">4</field>
+        <field name="image" type="FileField">photos/husky-2443664_640.jpg</field>
+        <field name="description" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant morbi. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Quisque sagittis purus sit amet volutpat. Nunc faucibus a pellentesque sit amet
+            porttitor. Nunc non blandit massa enim nec dui nunc mattis enim.</field>
+        <field name="gender" type="CharField">F</field>
+        <field name="size" type="CharField">M</field>
+    </object>
+    <object model="animals.animal" pk="4">
+        <field name="species" type="CharField">Python</field>
+        <field name="breed" type="CharField"></field>
+        <field name="name" type="CharField">Diego</field>
+        <field name="passport" rel="OneToOneRel" to="registry.passport">7</field>
+        <field name="age" type="PositiveSmallIntegerField">14</field>
+        <field name="image" type="FileField">photos/oXRwpxI.jpeg</field>
+        <field name="description" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant morbi. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Quisque sagittis purus sit amet volutpat. Nunc faucibus a pellentesque sit amet
+            porttitor. Nunc non blandit massa enim nec dui nunc mattis enim.</field>
+        <field name="gender" type="CharField">M</field>
+    </object>
+    <object model="animals.animal" pk="5">
+        <field name="species" type="CharField">Parrot</field>
+        <field name="breed" type="CharField"></field>
+        <field name="name" type="CharField">Iago</field>
+        <field name="passport" rel="OneToOneRel" to="registry.passport">10</field>
+        <field name="age" type="PositiveSmallIntegerField">7</field>
+        <field name="image" type="FileField">photos/rainbow-lorikeet-4772794_640.jpg</field>
+        <field name="description" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Vel elit scelerisque mauris pellentesque pulvinar
+            pellentesque habitant morbi. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Quisque sagittis purus sit amet volutpat. Nunc faucibus a pellentesque sit amet
+            porttitor. Nunc non blandit massa enim nec dui nunc mattis enim.</field>
+        <field name="gender" type="CharField">M</field>
+    </object>
+    <object model="infopages.mainpage" pk="1">
+        <field name="title" type="CharField">Planning to Adopt a Pet?</field>
+        <field name="page_text" type="TextField">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet nisl purus in mollis nunc sed. Faucibus scelerisque eleifend donec pretium
+            vulputate sapien nec. Dolor sed viverra ipsum nunc aliquet. Posuere morbi leo urna molestie at elementum eu facilisis. Urna cursus eget nunc scelerisque. Cursus euismod quis viverra nibh cras pulvinar mattis. Urna et pharetra pharetra massa. Mattis
+            enim ut tellus elementum. Orci nulla pellentesque dignissim enim sit amet. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Volutpat sed cras ornare arcu dui vivamus. Luctus accumsan tortor posuere ac. Iaculis eu non diam phasellus
+            vestibulum lorem. Tortor condimentum lacinia quis vel.</field>
+        <field name="phone_number" type="CharField">+12125552368</field>
+        <field name="email" type="CharField">email@gmail.com</field>
+        <field name="location" type="TextField">561 Beechwood Drive Pittsburgh Pennsylvania Zip code 15212</field>
+    </object>
+</django-objects>
