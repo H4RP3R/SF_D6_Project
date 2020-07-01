@@ -25,4 +25,5 @@ h1 {
     font-size: 14px;
     font-style: italic;
     margin-top: 8px;
+    text-transform: capitalize !important;
 }

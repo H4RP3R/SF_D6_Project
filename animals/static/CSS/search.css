@@ -5,11 +5,11 @@ h1 {
     font-size: 50px;
 }
 
-li>a {
+a.pet-item {
     color: #F226E8;
 }
 
-li>a:hover {
+a.pen-item:hover {
     color: #343A40 !important;
     text-decoration: none;
 }

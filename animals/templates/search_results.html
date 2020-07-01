@@ -24,9 +24,9 @@
             {% for pet in search_results %}
             <li class="list-group-item text-center">
                 {% if pet.species == "cat" or pet.species == "dog" %}
-                <a href="/{{ pet.species }}/{{ pet.pk }}">{{ pet }}</a>
+                <a class="pet-item" href="/{{ pet.species }}/{{ pet.pk }}">{{ pet }}</a>
                 {% else %}
-                <a href="/animal/{{ pet.pk }}">{{ pet }}</a>
+                <a class="pet-item" href="/animal/{{ pet.pk }}">{{ pet }}</a>
                 {% endif %}
             </li>
             {% endfor %}
