@@ -1,6 +1,7 @@
 h1 {
     font-family: 'Leckerli One', cursive;
     color: #F226E8;
+    opacity: 0.7;
     text-transform: capitalize;
     font-size: 50px;
 }
