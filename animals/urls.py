@@ -5,10 +5,10 @@ from .views import CatList, CatDetail, DogList, DogDetail, AnimalList, AnimalDet
 app_name = 'animals'
 urlpatterns = [
     path('cats/', CatList.as_view(), name='cat_list'),
-    path('cat/<int:pk>', CatDetail.as_view(), name='cat_detail'),
+    path('cat/<str:pk>', CatDetail.as_view(), name='cat_detail'),
     path('dogs/', DogList.as_view(), name='dog_list'),
-    path('dog/<int:pk>', DogDetail.as_view(), name='dog_detail'),
+    path('dog/<str:pk>', DogDetail.as_view(), name='dog_detail'),
     path('others/', AnimalList.as_view(), name='animal_list'),
-    path('animal/<int:pk>', AnimalDetail.as_view(), name='animal_detail'),
+    path('animal/<str:pk>', AnimalDetail.as_view(), name='animal_detail'),
     path('search/', search)
 ]
