@@ -11,7 +11,7 @@ class AbstractAnimal(models.Model):
     species = models.CharField(max_length=128)
     breed = models.CharField(max_length=64, blank=True)
     name = models.CharField(max_length=64)
-    passport = models.OneToOneField(Passport, on_delete=models.CASCADE)
+    passport = models.OneToOneField(Passport, on_delete=models.CASCADE, primary_key=True)
     age = models.PositiveSmallIntegerField(blank=True, null=True)
     image = models.ImageField(upload_to='photos')
     description = models.TextField()
