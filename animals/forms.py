@@ -1,14 +1,21 @@
 from django import forms
 
-from .models import Cat, Dog
 from registry.models import Passport
+from .models import Animal, Cat, Dog
+
+
+class AnimalAdminForm(forms.ModelForm):
+
+    class Meta:
+        model = Animal
+        exclude = ('id',)
 
 
 class CatAdminForm(forms.ModelForm):
 
     class Meta:
         model = Cat
-        exclude = ('species', )
+        exclude = ('species', 'id')
 
     def clean(self):
         # set default species for this class
@@ -20,7 +27,7 @@ class DogAdminForm(forms.ModelForm):
 
     class Meta:
         model = Dog
-        exclude = ('species', )
+        exclude = ('species', 'id')
 
     def clean(self):
         # set default species for this class

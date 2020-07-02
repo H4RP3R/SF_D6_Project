@@ -1,17 +1,20 @@
 from django.db import models
 
+
+import uuid
 from registry.models import Passport
 
 
 class AbstractAnimal(models.Model):
 
-    class Meta:
-        abstract = True
+    # class Meta:
+    #     abstract = True
 
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     species = models.CharField(max_length=128)
     breed = models.CharField(max_length=64, blank=True)
     name = models.CharField(max_length=64)
-    passport = models.OneToOneField(Passport, on_delete=models.CASCADE, primary_key=True)
+    passport = models.OneToOneField(Passport, on_delete=models.CASCADE)
     age = models.PositiveSmallIntegerField(blank=True, null=True)
     image = models.ImageField(upload_to='photos')
     description = models.TextField()

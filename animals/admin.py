@@ -2,12 +2,14 @@ from django.contrib import admin
 
 from animals.models import Animal, Cat, Dog
 from registry.models import Passport
-from .forms import CatAdminForm, DogAdminForm
+from .forms import CatAdminForm, DogAdminForm, AnimalAdminForm
+from registry.forms import PassportAdminForm
 
 
 @admin.register(Animal)
 class AnimalAdmin(admin.ModelAdmin):
-    pass
+
+    form = AnimalAdminForm
 
 
 @admin.register(Cat)
@@ -24,4 +26,4 @@ class DogAdmin(admin.ModelAdmin):
 
 @admin.register(Passport)
 class PassportAdmin(admin.ModelAdmin):
-    pass
+    form = PassportAdminForm
