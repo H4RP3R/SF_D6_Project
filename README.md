@@ -9,3 +9,5 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 В БД уже есть данные
+
+[Heroku](https://animal-adoption-petsy.herokuapp.com/)
